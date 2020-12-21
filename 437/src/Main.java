@@ -7,12 +7,13 @@ public class Main {
         int aa=-1;
         for(int i=0;i<N;i++) {
             a = in.nextInt();
-            if(a<437){
+            if(a<=437){
                 aa=i;
+                break;
             }
         }
         if(aa>=0){
-            System.out.println("Crash"+(aa+1));
+            System.out.println("Crash "+(aa+1));
         }else
             System.out.println("No crash");
     }
